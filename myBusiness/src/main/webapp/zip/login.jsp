@@ -31,8 +31,9 @@
 		<%if (id != null) {%>
 		<b><%=name%></b>님 환영 합니다.
 		<p>제한된 기능을 사용 할 수가 있습니다.<p/>
-		    <a href="pwdcheck.jsp">내정보조회</a><br/>
-		    <a href="../board/list.jsp">게시판</a><br/>
+		    <a href="pwdcheck.jsp">내정보조회</a><br/><br/>
+		    <a href="../board/list.jsp">게시판</a><br/><br/>
+		    <a href="../survey/pollList.jsp">투표함</a><br/><br/>
 			<a href="logout.jsp">로그아웃</a>
 			<%} else {%>
 		<form name="loginFrm" method="post" action="loginProc.jsp">

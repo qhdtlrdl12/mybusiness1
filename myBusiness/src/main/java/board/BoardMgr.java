@@ -340,10 +340,10 @@ public class BoardMgr {
 				res.setHeader("Accept-Ranges", "bytes");
 				String strClient = req.getHeader("User-Agent");
 				if (strClient.indexOf("MSIE6.0") != -1) {
-					res.setContentType("application/smnet;charset=euc-kr");
+					res.setContentType("application/smnet;charset=UTF-8");
 					res.setHeader("Content-Disposition", "filename=" + filename + ";");
 				} else {
-					res.setContentType("application/smnet;charset=euc-kr");
+					res.setContentType("application/smnet;charset=UTF-8");
 					res.setHeader("Content-Disposition", "attachment;filename="+ filename + ";");
 				}
 				out.clear();

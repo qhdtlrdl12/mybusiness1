@@ -42,17 +42,8 @@ session.setAttribute("bean", bean);//게시물을 세션에 저장
 <body bgcolor="#FFFFCC">
 	<br />
 	<br />
-		 <table width="600" cellpadding="3" align="center">
-			<tr>
-				<td bgcolor=#dddddd height="21" align="center">사용자의 비밀번호를
-					입력해주세요. <input type="password" name="pswd"> 
-					<input type="button" value="확인" onclick="">
-				</td>
-			</tr>
-		</table>
-	
 	 <%
-	if (pass.equals(repass)) {
+	if (pass.equals("")) {
 	%> 
 	<table align="center" width="600" cellspacing="3">
 		<tr>
@@ -125,9 +116,14 @@ session.setAttribute("bean", bean);//게시물을 세션에 저장
 	 <%
 	} else {
 	%>
-	<script type="text/javascript">
-	 
-	</script>
+	<table width="600" cellpadding="3" align="center">
+			<tr>
+				<td bgcolor=#dddddd height="21" align="center">사용자의 비밀번호를
+					입력해주세요. <input type="password" name="pswd"> 
+					<input type="button" value="확인" onclick="">
+				</td>
+			</tr>
+		</table>
 	<%
 	}
 	%> 

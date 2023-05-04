@@ -1,6 +1,6 @@
 <%@page import="java.util.*"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@page import="member.MemberBean" %>
 <jsp:useBean id="mMgr" class="member.MemberMgr"/>
 <% 
@@ -10,14 +10,14 @@
     
     String gen;
     if(info.getGender().equals("1")){
-    	gen = "³²¼º";
+    	gen = "ë‚¨ì„±";
     }else {
-    	gen = "¿©¼º";    
+    	gen = "ì—¬ì„±";    
     	}
 %>
 <%
    String hobby[] = info.getHobby();
-   String lists[] = {"ÀÎÅÍ³İ","¿©Çà","°ÔÀÓ","¿µÈ­","¿îµ¿"};
+   String lists[] = {"ì¸í„°ë„·","ì—¬í–‰","ê²Œì„","ì˜í™”","ìš´ë™"};
    String hobbyin = "";
    for(int i = 0; i < hobby.length; i++){
 	   if(hobby[i].equals("1"))
@@ -28,11 +28,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body bgcolor="#ffffcc">
-<h1>È¸¿øÁ¤º¸</h1>
+<h1>íšŒì›ì •ë³´</h1>
 <table bordercolor="#0000ff" border="1">
 <tr>
    <td><strong>ID</strong></td>
